@@ -1,6 +1,6 @@
-# Fundamental C#
+# C# .NET - Grunnleggende programmering
 
-## Create, build and run apps
+## Opprette, bygge,
 
 Navigate to root folder
 
@@ -27,7 +27,7 @@ Examine the files and folders that is created.
 ## Data types, variables and namespace
 
 - C# is a strongly typed programming language
-  
+
 ### Primitive types:
 - Primitive types in C# are the most basic data types that are directly supported by the language and are predefined by the compiler.
 - Examples of primitive types in C# include int, float, double, char, bool...
@@ -60,7 +60,7 @@ namespace EmployeeRegister
       Console.WriteLine(typeof(string).IsPrimitive);
       Console.WriteLine(typeof(int).IsPrimitive);
       Console.WriteLine(typeof(int).IsPrimitive);
-      
+
       int a = 3;
       string b = "This is a demo ";
       StringObj c = new StringObj();
@@ -83,22 +83,22 @@ namespace EmployeeRegister
       Console.WriteLine("Number after: " + a);
     }
 
-    public static void IncrementNumber(int number) 
+    public static void IncrementNumber(int number)
     {
       number++;
     }
 
-    public static void ExtendText(string txt) 
+    public static void ExtendText(string txt)
     {
       txt = txt + "extended";
     }
 
-    public static void ExtendText(StringObj obj) 
+    public static void ExtendText(StringObj obj)
     {
       obj.Value = obj.Value + "extended";
     }
 
-    public static void IncrementNumberOutVar(out int number) 
+    public static void IncrementNumberOutVar(out int number)
     {
       number = 5;
     }
@@ -135,8 +135,8 @@ namespace EmployeeRegister
       list[2] = 5;
 
     // int[] list = [3, 4, 5];
-  
-      foreach(int i in list) 
+
+      foreach(int i in list)
       {
         Console.Write(i);
       }
@@ -149,24 +149,24 @@ namespace EmployeeRegister
       jaggedArray[1] = [0, 2, 4, 6];
       jaggedArray[2] = [11, 22];
 
-      // int[][] jaggedArray = 
+      // int[][] jaggedArray =
       // [
         // [1, 3, 5, 7, 9],
         // [0, 2, 4, 6],
         // [11, 22]
       // ];
 
-      for(int i = 0; i<jaggedArray.Length; i++) 
+      for(int i = 0; i<jaggedArray.Length; i++)
       {
         Console.Write(i + ":");
-        foreach(int j in jaggedArray[i]) 
+        foreach(int j in jaggedArray[i])
         {
           Console.Write(j);
         }
-  
+
         Console.WriteLine();
       }
-  
+
       string test = Console.ReadLine();
     }
   }
@@ -191,18 +191,18 @@ namespace EmployeeRegister
 			p.firstname = "reodor";
 			p.lastname = "felgen";
 			p.birth = new datetime(1974, 9, 13);
-			
+
 			// Person p = new Person
 			// {
 			  // FirstName = "Reodor",
 			  // LastName = "Felgen",
 			  // Birth = new DateTime(1974, 9, 13)
 			// };
-			
+
 			Console.WriteLine(p);
-			
+
 			string test = Console.ReadLine();
-		}		
+		}
 	}
 }
 ```
@@ -215,26 +215,26 @@ namespace EmployeeRegister
 	  public string FirstName { get; set; }
 	  public string LastName { get; set; }
 	  public DateTime? Birth { get; set; }
-	  
+
 	  public override string ToString()
 	  {
 		  return FirstName + " " + LastName + ", Age: " + CalculateAge() ;
 	  }
 
-	  public int CalculateAge() 
+	  public int CalculateAge()
 	  {
 		if(!Birth.HasValue)
 			return 0;
-		
-		DateTime now = DateTime.Now;	
-		
+
+		DateTime now = DateTime.Now;
+
 		int age = now.Year - Birth.Value.Year;
 
 		if (now.Month < Birth.Value.Month || (now.Month == Birth.Value.Month && now.Day < Birth.Value.Day))
 			age--;
 
 		return age;
-	  }	  
+	  }
 	}
 }
 
