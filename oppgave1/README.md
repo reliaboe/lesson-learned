@@ -71,4 +71,4 @@ class Program
 
 Vi brukte --use-program-main som parameter på dotnet new... Dette for å vise hva som er oppstartsmetode. Nyere versjoner av .NET gjør dette implisitt. Slett hele demo-applikasjonen, og opprett prosjektet på nytt uten parameter --use-program-main.
 
-9. **Åpne Program.cs og se hvordan denne ser ut utem parameter**
+9. **Åpne Program.cs og se hvordan denne ser ut uten parameter**

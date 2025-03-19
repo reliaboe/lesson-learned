@@ -1,3 +1,4 @@
 # C# .NET - Grunnleggende programmering
 
-Grunnkurs i programmering i C#
+## Mål
+Forstå objekter og klasser i C#
