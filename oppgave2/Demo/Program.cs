@@ -5,11 +5,11 @@
         public static void Main(string[] args)
         {
             // Fjern kommentar på metode-kall. Hva blir resultatet?
-            //PrintTypes();
-            //PrintIncrementNumber();
-            //PrintExtendedText();
-            //PrintExtendedTextObject();
-            //PrintIncrementNumberWithOutParam();
+            PrintTypes();
+            PrintIncrementNumber();
+            PrintExtendedText();
+            PrintExtendedTextObject();
+            PrintIncrementNumberWithOutParam();
         }
 
         /// <summary>

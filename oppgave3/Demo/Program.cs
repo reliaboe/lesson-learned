@@ -4,12 +4,12 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        //OneDimensionalArray();
-        //OneDimensionalArray2();
-        //OneDimensionalArray3();
-        //MultiDimensionalArray();
-        //MultiDimensionalArray2();
-        //JaggedArray();
+        OneDimensionalArray();
+        OneDimensionalArray2();
+        OneDimensionalArray3();
+        MultiDimensionalArray();
+        MultiDimensionalArray2();
+        JaggedArray();
     }
 
     public static void OneDimensionalArray()
